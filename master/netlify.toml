@@ -1,0 +1,42 @@
+# Site Redirects
+
+[[redirects]]
+  from = "/gb/*"
+  to = "https://gb.nicksnell.net/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/de/*"
+  to = "https://de.nicksnell.net/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/ie/*"
+  to = "https://ie.nicksnell.net/:splat"
+  status = 200
+
+# Location redirects
+
+# Must use ISO 3166 country codes for country values
+# https://dev.maxmind.com/geoip/legacy/codes/iso3166/
+
+# Can also do Lang/Country pairs
+# {Language = ["en"], Country = ["GB"]}
+
+[[redirects]]
+  from = "/"
+  to = "/gb/"
+  status = 302
+  conditions = {Country = ["GB"]}
+
+[[redirects]]
+  from = "/"
+  to = "/de/"
+  status = 302
+  conditions = {Country = ["DE"]}
+
+[[redirects]]
+  from = "/"
+  to = "/ie/"
+  status = 302
+  conditions = {Country = ["IE"]}
