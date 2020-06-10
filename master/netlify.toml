@@ -29,19 +29,22 @@
 # {Language = ["en"], Country = ["GB"]}
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/gb/"
   status = 302
-  conditions = {Country = ["GB"]}
+  force = true
+  conditions = {Country = ["gb"]}
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/de/"
   status = 302
-  conditions = {Country = ["DE"]}
+  force = true
+  conditions = {Country = ["de"]}
 
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "/ie/"
   status = 302
-  conditions = {Country = ["IE"]}
+  force = true
+  conditions = {Country = ["ie"]}
