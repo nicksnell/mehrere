@@ -1,0 +1,4 @@
+[build]
+  base = "ie"
+  command = ""
+  publish = "src"

@@ -1,0 +1,4 @@
+[build]
+  base = "gb"
+  command = ""
+  publish = "src"
