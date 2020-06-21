@@ -1,0 +1,12 @@
+digraph Sites {
+  node [shape=box, fontname=Helvetica];
+
+  master[label="example.com/"];
+  gb[label="example.com/gb/"];
+  de[label="example.com/de/"];
+  ie[label="example.com/ie/"];
+
+  master -> gb;
+  master -> de;
+  master -> ie;
+}

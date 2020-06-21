@@ -7,17 +7,17 @@
 
 [[redirects]]
   from = "/gb/*"
-  to = "https://gb.nicksnell.net/:splat"
+  to = "https://gb.thebsides.co.uk/:splat"
   status = 200
 
 [[redirects]]
   from = "/de/*"
-  to = "https://de.nicksnell.net/:splat"
+  to = "https://de.thebsides.co.uk/:splat"
   status = 200
 
 [[redirects]]
   from = "/ie/*"
-  to = "https://ie.nicksnell.net/:splat"
+  to = "https://ie.thebsides.co.uk/:splat"
   status = 200
 
 # Location redirects
