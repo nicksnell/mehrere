@@ -3,6 +3,8 @@ var regions = ["de", "gb", "ie"];
 function setRegion(region) {
   console.debug("Set region to: " + region);
   document.cookie = "nf_country=" + region + ";path=/;SameSite=Strict;Secure";
+  window.location = "/";
+  return false;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,11 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.className = "pr-2 underline";
     link.innerHTML = region;
     link.href = "#";
-    link.onclick = function (region) {
-      setRegion(region);
-      window.location = "/";
-      return false;
-    };
+    link.onclick = setRegion.bind(this, region);
     output.appendChild(link);
   }
 
