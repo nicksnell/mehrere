@@ -29,6 +29,11 @@
 # {Language = ["en"], Country = ["GB"]}
 
 [[redirects]]
+  from = "/js/*"
+  to = "/js/:splat"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/gb/"
   status = 302
