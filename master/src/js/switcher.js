@@ -1,7 +1,7 @@
 var regions = ["de", "gb", "ie"];
 
 function setRegion(region) {
-  console.debug("Set region to:" + region);
+  console.debug("Set region to: " + region);
   document.cookie = "nf_country=" + region + ";path=/;SameSite=Strict;Secure";
 }
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.className = "pr-2 underline";
     link.innerHTML = region;
     link.href = "#";
-    link.onclick = function () {
+    link.onclick = function (region) {
       setRegion(region);
       window.location = "/";
       return false;
