@@ -1,7 +1,8 @@
 var regions = ["de", "gb", "ie"];
 
 function setRegion(region) {
-  document.cookie = "nf_country=" + region + ";path=/";
+  console.debug("Set region to:" + region);
+  document.cookie = "nf_country=" + region + ";path=/;SameSite=Strict;Secure";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
